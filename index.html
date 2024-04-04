@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Bootstrap Grid</title>
+    <!-- Adicionando Bootstrap CSS -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para o rodapé */
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-dark text-white py-4">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Meu Site</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto"> <!-- 'ml-auto' para alinhar à direita -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Serviços
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Serviço 1</a>
+                                <a class="dropdown-item" href="#">Serviço 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Mais Serviços</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="container mt-5">
+        <h2>Cadastro de Perfil</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+            </div>
+            <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 Meu Site</p>
+        </div>
+    </footer>
+
+    <!-- Adicionando Bootstrap JS (opcional) -->
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
